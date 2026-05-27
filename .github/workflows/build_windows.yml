@@ -1,5 +1,5 @@
 name: Build Asphyxia Core (Windows Only)
-on:
+on: [workflow_dispatch]
   push:
     tags:
       - 'v*'
@@ -46,3 +46,4 @@ jobs:
           prerelease: ${{ contains(github.ref, '-alpha') || contains(github.ref, '-beta') || contains(github.ref, '-rc') }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      
