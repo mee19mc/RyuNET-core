@@ -1,4 +1,4 @@
-name: Build Asphyxia Core
+name: Build Asphyxia Core (Windows Only)
 on:
   push:
     tags:
